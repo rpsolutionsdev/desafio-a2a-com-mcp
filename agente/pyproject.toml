@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agente-central-de-salas"
+version = "1.0.0"
+description = "Agente A2A v1.0 com cliente MCP v2 (2026-07-28) por dentro para reserva de salas da Hill Valley Tech"
+requires-python = ">=3.10"
+dependencies = [
+    "a2a-sdk[http-server]==1.3.0",
+    "mcp==2.3.0",
+    "mcp-types==2.3.0",
+    "pydantic==2.14.2",
+    "cryptography==50.0.2",
+    "starlette==1.10.0",
+    "sse-starlette==3.6.0",
+    "uvicorn==0.54.0",
+    "httpx==0.28.1",
+    "httpx2==2.16.0",
+    "anyio==4.15.1",
+]
+
+[tool.setuptools]
+py-modules = []
+
